@@ -1,0 +1,5 @@
+c:\users\slambert\documents\visual studio 2010\Projects\WebCalc_Fall11\WebCalc_Fall11\bin\WebCalc_Fall11.dll
+c:\users\slambert\documents\visual studio 2010\Projects\WebCalc_Fall11\WebCalc_Fall11\bin\WebCalc_Fall11.pdb
+c:\users\slambert\documents\visual studio 2010\Projects\WebCalc_Fall11\WebCalc_Fall11\obj\Debug\ResolveAssemblyReference.cache
+c:\users\slambert\documents\visual studio 2010\Projects\WebCalc_Fall11\WebCalc_Fall11\obj\Debug\WebCalc_Fall11.dll
+c:\users\slambert\documents\visual studio 2010\Projects\WebCalc_Fall11\WebCalc_Fall11\obj\Debug\WebCalc_Fall11.pdb
