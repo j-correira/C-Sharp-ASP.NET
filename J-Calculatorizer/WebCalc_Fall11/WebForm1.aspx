@@ -9,6 +9,12 @@
 
  <style>
 
+
+body
+{
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
 .wrap 
 {
   margin: auto;
@@ -26,11 +32,11 @@
 #centerCenter
 {
     margin:0 auto;
-    width:180px;
-    height: 288px;
-    border: 1px solid grey;
+    width:183px;
+    height: 347px;
+    border: 2px solid #2e3131;
     border-radius: 20px 20px 20px 20px;
-    padding: 28px;
+    padding: 22px;
 
 
 }
@@ -45,6 +51,7 @@
 .buttons
 {
     border-radius: 14px;
+    font-size:15px;
     color: white;
     width: 40px;
     padding: 10px;
@@ -69,7 +76,8 @@
 .buttons.memory
 {
     border-radius: 14px;
-    color: #2d3436;
+    font-size: 11px;
+    color: #2e3131;
     padding: 10px;
     text-align: center;
     text-decoration: none;
@@ -94,8 +102,24 @@
     margin:0 auto;
     width:max-content;
     height: 20px;
-    margin-top:13px;
 }
+
+H3
+{
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+    color:#2e3131;
+
+}
+
+hr
+{
+    width: 100%;
+    margin-top:14px;
+    margin-bottom: 16px;
+}
+
 
 
 </style>
@@ -108,7 +132,7 @@
 
     <div id="centerCenter">
     <form id="form1" runat="server">
-        <asp:TextBox ID="txtLCD" placeholder="! Calculator !" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtLCD" placeholder="              ! Calculator !" runat="server"></asp:TextBox>
         <br />
         <asp:Button ID="btnMS" class="buttons memory"  runat="server" Text="MS" OnClick="btnMS_Click" />
         <asp:Button ID="btnMR" class="buttons memory"  runat="server" Text="MR" OnClick="btnMR_Click" />
@@ -136,14 +160,18 @@
         <br />
         <asp:Button ID="btnClear" class="buttons"  runat="server" Text="Clear" OnClick="btnClear_Click" />
         <br />
+        <hr>
         <div id="results">
+            <h3>[</h3>
             <asp:Label ID="lblNum1" runat="server"></asp:Label>
             <asp:Label ID="lblOperator" runat="server"></asp:Label>
             <asp:Label ID="lblNum2" runat="server"></asp:Label>
             <asp:Label ID="lblEqual" runat="server"></asp:Label>
             <asp:Label ID="lblResult" runat="server"></asp:Label>
+            <h3>]</h3>
         </div>
     </form>
+    <div id="results"><h3>Memory: </h3><asp:Label ID="lblMemory" runat="server"></asp:Label></div>
     </div><!-- close centerCenter -->
 
     </div><!-- close center form -->

@@ -8,19 +8,24 @@ using System.Web.UI.WebControls;
 
 
 /*
+ * 
+ * 
+ * 
+ * 
+ * 
 (x) 1)   Place one textbox (LCD) on the page to hold the two values to be added, subtracted, multiplied, etc.
 
-(-) 2)   Place two labels to the right of the LCD textbox.  One to let us know if something is stored in memory (“M”), the other to let us know the last math operation that occurred (+, -, *, /)
+(x) 2)   Place two labels to the right of the LCD textbox.  One to let us know if something is stored in memory (“M”), the other to let us know the last math operation that occurred (+, -, *, /)
 
 (x) 3)    Place buttons on the page for each number, each math operation, memory feature, and equals sign.
 
-(-) 4)   When a number button is clicked, either concatenate it to the existing number within the LCD or clear the LCD and place the number within the cleared LCD.
+(x) 4)   When a number button is clicked, either concatenate it to the existing number within the LCD or clear the LCD and place the number within the cleared LCD.
 
-(-) 5)   When math operator button is clicked, store the current LCD value and operation within variables and clear the LCD.
+(x) 5)   When math operator button is clicked, store the current LCD value and operation within variables and clear the LCD.
 
-(-) 6)   When the Equals sign is pressed, store the LCD value within another variable, then perform the calculation, and display results within LCD.
+(x) 6)   When the Equals sign is pressed, store the LCD value within another variable, then perform the calculation, and display results within LCD.
 
-(-) 7)   BONUS (10 points) Employ MS, MR, MC buttons to Store, Restore, and Clear the memory variable.
+(x) 7)   BONUS (10 points) Employ MS, MR, MC buttons to Store, Restore, and Clear the memory variable.
 
 
 */
@@ -111,17 +116,23 @@ public partial class _Default : System.Web.UI.Page
     //memory function
     protected void btnMS_Click(object sender, EventArgs e)
     {
+        //store number into memory
+        lblMemory.Text = txtLCD.Text;
 
+        //clear textbox of saved number
+        txtLCD.Text = "";
     }
 
+    //output memory number to LCD
     protected void btnMR_Click(object sender, EventArgs e)
     {
-
+        txtLCD.Text = lblMemory.Text;
     }
 
     protected void btnMC_Click(object sender, EventArgs e)
     {
-
+        //clear memory
+        lblMemory.Text = "";
     }
 
 
