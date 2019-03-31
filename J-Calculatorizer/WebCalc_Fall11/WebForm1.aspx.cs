@@ -147,6 +147,25 @@ public partial class _Default : System.Web.UI.Page
         lblResult.Text = "";
     }
 
+    protected void Numbers_Click(object sender, EventArgs e)
+    {
+        Button temp = new Button();
+        temp = (Button)sender;
+
+        txtLCD.Text += temp.Text;
+    }
+
+    protected void Operators_Click(object sender, EventArgs e)
+    {
+        Button temp = new Button();
+        temp = (Button)sender;
+
+        txtLCD.Text += temp.Text;
+    }
+
+
+
+/*
     protected void btn1_Click(object sender, EventArgs e)
     {
         txtLCD.Text += "1";
@@ -201,4 +220,6 @@ public partial class _Default : System.Web.UI.Page
     {
         txtLCD.Text += ".";
     }
+*/
+
 }
