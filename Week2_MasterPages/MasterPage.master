@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+
+        main
+        {
+            margin:0 auto;
+            width: 980px;
+        }
+
+        #header
+        {
+            height:150px;
+            width:100%;
+            padding: 25px;
+        }
+
+        .w3-border
+        {
+            border: 1px solid #ccc!important;
+            border-radius: 8px;
+        }
+
+        #AllContent
+        {
+
+        }
+
+        #MainContent
+        {
+             width:80%; 
+             float:right;
+             padding: 0px 35px 0px 35px;
+        }
+
+        #SideContent
+        {
+             width:20%;
+             background-color:Gray;
+             margin-right: 25px;
+             display:block;
+            border: 1px solid blue;
+
+        }
+
+        #footer
+        {
+             width:100%;
+             margin-top: 30px;
+             background-color:Teal; 
+             height:50px; 
+             float:none;
+             text-align: center;
+             padding:20px;
+             color:white;
+        }
+
+        #nav
+        {
+            padding: 25px;
+        }
+
+        footer
+        {
+            border: 1px solid red;
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <main>
+
+    <div id="nav">
+  <ul class="nav nav-tabs nav-justified">
+    <li class="nav-item">
+      <a class="nav-link active" href="default.aspx">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+  </ul>
+</div>
+<!-- old nav buttons
+        <div id="header">
+            <div class="btn-group">
+                <button class="btn btn-primary" href="Default.aspx" class="button">Home</button>
+                <button class="btn btn-primary" href="ContactUs.aspx" class="button">Contact</button>
+                <button class="btn btn-primary" href="AboutUs.aspx" class="button">About Us</button>
+            </div>
+        </div>
+-->       
+
+    
+        <div id="AllContent">
+
+            <div id="MainContent">
+                <asp:ContentPlaceHolder id="cphMainContent" runat="server">
+                Working on it............
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div id="SideContent">
+                <asp:ContentPlaceHolder id="cphSideContent" runat="server">
+                    Side Info/ Specials /News / Info
+                </asp:ContentPlaceHolder>                
+            </div>
+
+
+        </div><!-- close all content -->
+
+
+<!-- Footer -->
+<footer>
+</footer>
+<!-- Footer -->
+
+
+
+
+
+    </main>
+    </form>
+</body>
+</html>
