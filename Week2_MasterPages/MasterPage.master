@@ -47,33 +47,43 @@
         #SideContent
         {
              width:20%;
-             background-color:Gray;
              margin-right: 25px;
              display:block;
-            border: 1px solid blue;
-
+             border: 1px solid #6bb9f0;
+             border-radius:5px;
         }
 
         #footer
         {
-             width:100%;
-             margin-top: 30px;
-             background-color:Teal; 
-             height:50px; 
-             float:none;
-             text-align: center;
-             padding:20px;
-             color:white;
+            position: fixed;
+            height:45px;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #6bb9f0;
+            color: white;
+            text-align: center;
         }
 
         #nav
         {
             padding: 25px;
+            color:#6bb9f0;
         }
 
-        footer
+        .jumbotron
         {
-            border: 1px solid red;
+            padding: 20px;
+            margin-bottom: 2rem;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+
+        .list-group-item.active {
+            z-index: 2;
+            color: #fff;
+            background-color: #1791e8;
+            /* border-color: #007bff; */
         }
 
 
@@ -87,28 +97,23 @@
     <main>
 
     <div id="nav">
-  <ul class="nav nav-tabs nav-justified">
-    <li class="nav-item">
-      <a class="nav-link active" href="default.aspx">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">About</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Contact</a>
-    </li>
-  </ul>
-</div>
-<!-- old nav buttons
-        <div id="header">
-            <div class="btn-group">
-                <button class="btn btn-primary" href="Default.aspx" class="button">Home</button>
-                <button class="btn btn-primary" href="ContactUs.aspx" class="button">Contact</button>
-                <button class="btn btn-primary" href="AboutUs.aspx" class="button">About Us</button>
-            </div>
+    <ul class="nav nav-tabs nav-justified">
+            <li class="nav-item">
+                <a class="nav-link" href="Default.aspx"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="AboutUs.aspx"><b>About</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ContactUs.aspx"><b>Contact</b></a>
+            </li>
+        </ul>
+    </div>
+     
+        <div class="jumbotron">
+            <h1>J's Master Page</h1> 
+            <p>"A master page is a special type of ASP.NET page that defines site-wide markup & regions where associated content will be"</p> 
         </div>
--->       
-
     
         <div id="AllContent">
 
@@ -121,7 +126,18 @@
             <div id="SideContent">
                 <asp:ContentPlaceHolder id="cphSideContent" runat="server">
                     Side Info/ Specials /News / Info
-                </asp:ContentPlaceHolder>                
+                </asp:ContentPlaceHolder>
+                
+                <div class="list-group">
+<a href="#" class="list-group-item active"><strong><u>Nacho Recipes</u></strong></a>
+<a href="https://www.allrecipes.com/recipe/51147/super-nachos/" class="list-group-item">• Super Nachos</a>
+<a href="https://www.delish.com/cooking/recipe-ideas/recipes/a51518/nachos-supreme-recipe/" class="list-group-item">• Nachos Supreme</a>
+<a href="https://www.tasteofhome.com/recipes/bacon-nachos/" class="list-group-item">• Bacon Nachos</a>
+<a href="https://www.yellowblissroad.com/loaded-chicken-nachos/" class="list-group-item">• Loaded Nachos</a>
+<a href="https://www.yellowblissroad.com/loaded-chicken-nachos/" class="list-group-item">• Jalapeno Nachos</a>
+<a href="https://www.yellowblissroad.com/loaded-chicken-nachos/" class="list-group-item">• Nachos Con Queso</a>
+</div>
+                              
             </div>
 
 
@@ -129,8 +145,9 @@
 
 
 <!-- Footer -->
-<footer>
-</footer>
+<div id="footer">
+    <p>Footery Foot Foot ©</p>
+</div>
 <!-- Footer -->
 
 
