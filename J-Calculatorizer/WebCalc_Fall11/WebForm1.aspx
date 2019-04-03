@@ -33,19 +33,20 @@ body
 {
     margin:0 auto;
     width:183px;
-    height: 347px;
+    height: 373px;
     border: 2px solid #2e3131;
     border-radius: 20px 20px 20px 20px;
     padding: 22px;
 
-
 }
+
 
 #txtLCD
 {
     width: 179px;
     background-color:#f5f6fa;
     margin-bottom: 5px;
+    font-size: 30px;
 }
 
 .buttons
@@ -102,6 +103,7 @@ body
     margin:0 auto;
     width:max-content;
     height: 20px;
+    margin-bottom: 5px;
 }
 
 H3
@@ -132,7 +134,7 @@ hr
 
     <div id="centerCenter">
     <form id="form1" runat="server">
-        <asp:TextBox ID="txtLCD" placeholder="              ! Calculator !" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtLCD" placeholder=" ! Calculator !" runat="server"></asp:TextBox>
         <br />
         <asp:Button ID="btnMS" class="buttons memory"  runat="server" Text="MS" OnClick="btnMS_Click" />
         <asp:Button ID="btnMR" class="buttons memory"  runat="server" Text="MR" OnClick="btnMR_Click" />
