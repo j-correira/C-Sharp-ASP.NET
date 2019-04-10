@@ -14,7 +14,7 @@
                 <br />
                 <br />
                 <h3>Password:&nbsp;&nbsp;</h3>
-                <asp:TextBox ID="password" TextMode="Password" value="NEIT" runat="server"></asp:TextBox>
+                <asp:TextBox ID="password" TextMode="Password" value="" runat="server"></asp:TextBox>
                 <br />
                 <br />
                 <div id="centerSubmit">

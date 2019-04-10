@@ -13,13 +13,13 @@
 
 <style>
 
-            .jumbotron
-        {
-            padding: 20px;
-            margin-bottom: 2rem;
-            background-color: #e9ecef;
-            border-radius: 5px;
-        }
+.jumbotron
+{
+    padding: 20px;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
 
     .contact-form{
     background: #fff;
@@ -92,6 +92,27 @@
 {
     padding:15px;
 }
+
+#loginWrap
+{
+    float:left;
+}
+
+#centerFeedback
+{
+    border: 1px solid grey;
+    border-radius:10px;
+    padding:15px;
+    padding: 15px;
+    margin-bottom: 85px;
+    width: 463px;
+    float: right;
+}
+
+h3
+{
+    margin:0;
+}
 </style>
 
  <div id="loginWrap">
@@ -108,20 +129,32 @@
                 <asp:TextBox ID="lName" placeholder="Last Name" runat="server"></asp:TextBox>
                 <br />
                 <br />
+                <h5>Phone Number:&nbsp;</h5>
+                <asp:TextBox ID="phone" placeholder="5555555555" runat="server"></asp:TextBox>
+                <br />
+                <br />
+                <h5>Email:&nbsp;</h5>
+                <asp:TextBox ID="email" placeholder="emailer@email.com" runat="server"></asp:TextBox>
+                <br />
+                <br />
 
                 <div id="centerSubmit">
                     <asp:Button ID="submitForm" runat="server" Text="Submit" class="btn btn-primary" OnClick="submit_click" />
                     <br />
                     <br />
-
-                    <div id="centerFeedback">
-                        <asp:Label ID="lblformResults" runat="server" />
-                    </div>
                 </div>
             </div>
         </div><!-- /loginWrap -->
+
+                        <div id="centerFeedback">
+                        <asp:Label ID="lblformResults" runat="server" />
+                        <br />
+                        <br />
+                        <asp:Label ID="lblformFeedback" runat="server" />
+                    </div>
+
         <div id="formResults"></div>
-</div>
+
 <!------ end bootstrap contact form ---------->
 
 
