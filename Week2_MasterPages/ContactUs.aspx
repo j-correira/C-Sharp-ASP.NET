@@ -48,7 +48,7 @@
 .contact-form h3{
     margin-bottom: 8%;
     margin-top: -10%;
-    text-align: center;
+    text-align: left;
     color: #0062cc;
 }
 .contact-form .btnContact {
@@ -71,48 +71,65 @@
     border: none;
     cursor: pointer;
 }
+
+#formLeft
+{
+    float:left;
+}
+
+#formRight
+{
+    float:left;
+}
+
+#sideImg
+{
+    height: 193px;
+    padding: 15px;
+}
+
+#sidePara
+{
+    padding:15px;
+}
 </style>
 
-<div class="container contact-form">
-            <div class="contact-image">
-                <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
-            </div>
-            <form method="post">
-                <h3>Drop Us a Message</h3>
-               <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
-                        </div>
+ <div id="loginWrap">
+            <div id="loginBox">
+                <h5>First Name:&nbsp;</h5>
+                <asp:TextBox ID="fName" placeholder="First Name" runat="server"></asp:TextBox>
+                <br />
+                <br />
+                <h5>Middle Name:&nbsp;</h5>
+                <asp:TextBox ID="mName" placeholder="Middle Name" runat="server"></asp:TextBox>
+                <br />
+                <br />
+                <h5>Last Name:&nbsp;</h5>
+                <asp:TextBox ID="lName" placeholder="Last Name" runat="server"></asp:TextBox>
+                <br />
+                <br />
+
+                <div id="centerSubmit">
+                    <asp:Button ID="submitForm" runat="server" Text="Submit" class="btn btn-primary" OnClick="submit_click" />
+                    <br />
+                    <br />
+
+                    <div id="centerFeedback">
+                        <asp:Label ID="lblformResults" runat="server" />
                     </div>
                 </div>
-            </form>
+            </div>
+        </div><!-- /loginWrap -->
+        <div id="formResults"></div>
 </div>
 <!------ end bootstrap contact form ---------->
-      <blockquote>
-        <p>Sometimes I'll start a sentence and I don't even know where it's going. I just hope I find it along the way.</p>
-    <footer>From Michael Scott</footer>
-  </blockquote>
-    
 
 
 </asp:Content>
 
+
 <asp:Content ID="Content3" ContentPlaceHolderID="cphSideContent" Runat="Server">
- 
+    <h5 id="sidePara">Give us your info!</h5>
+    <img id="sideImg" src="http://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/email-icon.png" />
 </asp:Content>
 

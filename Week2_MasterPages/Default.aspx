@@ -16,6 +16,14 @@ Pork belly landjaeger ham hock brisket frankfurter turducken sirloin shankle por
 
 
 <asp:Content ID="Content3" ContentPlaceHolderID="cphSideContent" Runat="Server">
-
+<div class="list-group">
+<a href="#" class="list-group-item active"><strong><u>Nacho Recipes</u></strong></a>
+<a href="https://www.allrecipes.com/recipe/51147/super-nachos/" class="list-group-item">• Super Nachos</a>
+<a href="https://www.delish.com/cooking/recipe-ideas/recipes/a51518/nachos-supreme-recipe/" class="list-group-item">• Nachos Supreme</a>
+<a href="https://www.tasteofhome.com/recipes/bacon-nachos/" class="list-group-item">• Bacon Nachos</a>
+<a href="https://www.yellowblissroad.com/loaded-chicken-nachos/" class="list-group-item">• Loaded Nachos</a>
+<a href="https://www.yellowblissroad.com/loaded-chicken-nachos/" class="list-group-item">• Jalapeno Nachos</a>
+<a href="https://www.yellowblissroad.com/loaded-chicken-nachos/" class="list-group-item">• Nachos Con Queso</a>
+</div>
 </asp:Content>
 
