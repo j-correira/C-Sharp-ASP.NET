@@ -109,9 +109,23 @@
     float: right;
 }
 
+#centerSubmit
+{
+    margin-bottom: 16px;
+    margin-left: 252px;
+}
+
 h3
 {
     margin:0;
+}
+
+#MainContent
+{
+    width: 80%;
+    float: right;
+    padding: 0px 35px 0px 35px;
+    margin-bottom: 100px;
 }
 </style>
 
@@ -137,19 +151,19 @@ h3
                 <asp:TextBox ID="email" placeholder="emailer@email.com" runat="server"></asp:TextBox>
                 <br />
                 <br />
-
-                <div id="centerSubmit">
-                    <asp:Button ID="submitForm" runat="server" Text="Submit" class="btn btn-primary" OnClick="submit_click" />
-                    <br />
-                    <br />
-                </div>
+                <h5>Address:&nbsp;</h5>
+                <asp:TextBox ID="address" placeholder="1 Main St" runat="server"></asp:TextBox>
+                <br />
+                <br />
             </div>
         </div><!-- /loginWrap -->
 
-                        <div id="centerFeedback">
+                    <div id="centerSubmit">
+                        <asp:Button ID="submitForm" runat="server" Text="Submit" class="btn btn-primary" OnClick="submit_click" />
+                    </div>
+
+                    <div id="centerFeedback">
                         <asp:Label ID="lblformResults" runat="server" />
-                        <br />
-                        <br />
                         <asp:Label ID="lblformFeedback" runat="server" />
                     </div>
 
