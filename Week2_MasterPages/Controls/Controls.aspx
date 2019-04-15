@@ -5,7 +5,11 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <main>
-    <h2>The Control Panel</h2>
+    <h4>The Control Panel</h4>
+    <br />
+
+    <asp:Label ID="greeting" runat="server" Text=""></asp:Label>
+
     <p>Buttons and clicky thingys will go here</p>
     <hr />
     <asp:Button ID="logout" class="btn btn-danger" runat="server" Text="Log Out" OnClick="logout_click"/>

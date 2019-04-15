@@ -9,7 +9,8 @@ public partial class Controls_Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        //Session["UserName"] = "";
+        Session["UserName"] = username.Text;
     }
 
     protected void submitLogin_click(object sender, EventArgs e)

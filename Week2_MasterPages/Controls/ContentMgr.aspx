@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ContactMgr.aspx.cs" Inherits="Controls_ContactMgr" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ContentMgr.aspx.cs" Inherits="Controls_ContactMgr" %>
 
 <!DOCTYPE html>
 

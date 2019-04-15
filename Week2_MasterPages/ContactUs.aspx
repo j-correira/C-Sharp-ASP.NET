@@ -105,14 +105,13 @@
     padding:15px;
     padding: 15px;
     margin-bottom: 85px;
-    width: 463px;
+    width: 313px;
     float: right;
 }
 
 #centerSubmit
 {
     margin-bottom: 16px;
-    margin-left: 252px;
 }
 
 h3
@@ -124,13 +123,41 @@ h3
 {
     width: 80%;
     float: right;
-    padding: 0px 35px 0px 35px;
+    padding: 0px 0px 0px 35px;
     margin-bottom: 100px;
+}
+
+#cphMainContent_submitForm
+{
+    height: 53px;
+    font-size: 26px;
+    width: 313px;
+    margin-left: -16px;
+    margin-top: -16px;
+    border-radius: 11px 11px 0px 0px;
+}
+
+input[type="text"]
+{
+    width:147px
+}
+
+#contactFormRight
+{
+    float:right;
+    margin-left: 45px;
+}
+
+#contactFormLeft
+{
+    float:left;
 }
 </style>
 
  <div id="loginWrap">
             <div id="loginBox">
+
+                <div id="contactFormLeft">
                 <h5>First Name:&nbsp;</h5>
                 <asp:TextBox ID="fName" placeholder="First Name" runat="server"></asp:TextBox>
                 <br />
@@ -143,26 +170,57 @@ h3
                 <asp:TextBox ID="lName" placeholder="Last Name" runat="server"></asp:TextBox>
                 <br />
                 <br />
-                <h5>Phone Number:&nbsp;</h5>
-                <asp:TextBox ID="phone" placeholder="5555555555" runat="server"></asp:TextBox>
+                <h5>City:&nbsp;</h5>
+                <asp:TextBox ID="city" placeholder="City" runat="server"></asp:TextBox>
+                <br />
+                <br />
+                <h5>State:&nbsp;</h5>
+                <asp:TextBox ID="state" placeholder="State" runat="server"></asp:TextBox>
+                <br />
+                <br />
+                <h5>Zip Code:&nbsp;</h5>
+                <asp:TextBox ID="zip" placeholder="Zip Code" runat="server"></asp:TextBox>
+                <br />
+                <br />
+                </div>
+
+                <div id="contactFormRight">
+                <h5>Address 1:&nbsp;</h5>
+                <asp:TextBox ID="address1" placeholder="1 Main St" runat="server"></asp:TextBox>
+                <br />
+                <br />
+                <h5>Address 2:&nbsp;</h5>
+                <asp:TextBox ID="address2" placeholder="Apt. 3A" runat="server"></asp:TextBox>
                 <br />
                 <br />
                 <h5>Email:&nbsp;</h5>
                 <asp:TextBox ID="email" placeholder="emailer@email.com" runat="server"></asp:TextBox>
                 <br />
                 <br />
-                <h5>Address:&nbsp;</h5>
-                <asp:TextBox ID="address" placeholder="1 Main St" runat="server"></asp:TextBox>
+                <h5>Phone Number:&nbsp;</h5>
+                <asp:TextBox ID="phone" placeholder="5555555555" runat="server"></asp:TextBox>
                 <br />
                 <br />
+                <h5>Cell Phone Number:&nbsp;</h5>
+                <asp:TextBox ID="cellPhone" placeholder="1111111111" runat="server"></asp:TextBox>
+                <br />
+                <br />
+                <h5>Facebook:&nbsp;</h5>
+                <asp:TextBox ID="facebook" placeholder="facebook.com/dude" runat="server"></asp:TextBox>
+                <br />
+                <br />   
+                </div>                            
             </div>
         </div><!-- /loginWrap -->
 
-                    <div id="centerSubmit">
-                        <asp:Button ID="submitForm" runat="server" Text="Submit" class="btn btn-primary" OnClick="submit_click" />
-                    </div>
+                    
 
                     <div id="centerFeedback">
+
+                        <div id="centerSubmit">
+                            <asp:Button ID="submitForm" runat="server" Text="Submit" class="btn btn-primary" OnClick="submit_click" />
+                        </div>
+
                         <asp:Label ID="lblformResults" runat="server" />
                         <asp:Label ID="lblformFeedback" runat="server" />
                     </div>
