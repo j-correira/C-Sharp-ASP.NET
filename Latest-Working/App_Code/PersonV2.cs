@@ -122,31 +122,32 @@ using System.Data.SqlClient;
 
 
             //try to connect to server
-            try
-            {
+            //try
+            //{
                 //opens connection
                 Conn.Open();
 
-            //feedback if successfully connected
-            //strResult += "SUCCESS! Connected to database" + Environment.NewLine;
-            strResult += "SUCCESS! Connected to database" + Environment.NewLine;
+        //feedback if successfully connected
+        //strResult += "SUCCESS! Connected to database" + Environment.NewLine;
+        //strResult.Text += "SUCCESS! Connected to database";
 
-            //intRecs
-            int intRecs = comm.ExecuteNonQuery();
-                //strResult += $"SUCCESS! Inserted {intRecs} record(s)" + Environment.NewLine;
+        //intRecs
+        //int intRecs = comm.ExecuteNonQuery();
+        comm.ExecuteNonQuery();
+        //strResultTxt.Text += "SUCCESS! Inserted " + intRecs + " record(s) <br>";
 
-                //close connection
-                Conn.Close();
-            }
-            catch (Exception err)
-            {
-                strResult = "ERROR: Failed to connect to database " + err.Message;
-            }
-            finally
-            {
+        //close connection
+        Conn.Close();
+            //}
+            //catch (Exception err)
+            //{
+                //strResult = "ERROR: Failed to connect to database " + err.Message;
+            //}
+            //finally
+            //{
                 //runs regardless
                 //not neccessary in c#
-            }
+            //}
 
             //return feedback string {strResult}
             return strResult;

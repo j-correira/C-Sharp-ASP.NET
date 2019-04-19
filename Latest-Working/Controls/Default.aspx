@@ -6,7 +6,7 @@
 
 
 
-    <main>
+
         <div id="loginWrap">
             <div id="loginBox">
                 <h3>Username:&nbsp;</h3>
