@@ -6,7 +6,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 public partial class Controls_Controls : System.Web.UI.Page
+
 {
+
     protected void Page_Load(object sender, EventArgs e)
     {
         
@@ -16,7 +18,9 @@ public partial class Controls_Controls : System.Web.UI.Page
             //All good, they are logged in
 
             //output name of user logging in
-            greeting.Text = "<h3>Hello, " + Session["UserName"].ToString() + "</h3><br><br>";
+
+        //error "Label1 doesnt exist in current context ????
+            //Label1.Text = "<h3>Hello, " + Session["UserName"].ToString() + "</h3><br><br>";
         }
         else
         {

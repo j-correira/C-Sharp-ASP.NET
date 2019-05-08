@@ -105,7 +105,7 @@
                 <a class="nav-link" href="AboutUs.aspx"><b>About</b></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="ContactUs.aspx"><b>Contact</b></a>
+                <a class="nav-link" href="ContactUs.aspx"><b>Contact Us</b></a>
             </li>
         </ul>
     </div>

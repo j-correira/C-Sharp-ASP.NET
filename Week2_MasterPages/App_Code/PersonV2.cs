@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 
 
-/*
-    class PersonV2 : Person
+
+    public class PersonV2 : Person
     {
 
         private string cellPhone;
@@ -127,12 +127,13 @@ using System.Data.SqlClient;
                 //opens connection
                 Conn.Open();
 
-                //feedback if successfully connected
-                strResult += "SUCCESS! Connected to database" + Environment.NewLine;
+            //feedback if successfully connected
+            //strResult += "SUCCESS! Connected to database" + Environment.NewLine;
+            strResult += "SUCCESS! Connected to database" + Environment.NewLine;
 
-                //intRecs
-                int intRecs = comm.ExecuteNonQuery();
-                strResult += $"SUCCESS! Inserted {intRecs} record(s)" + Environment.NewLine;
+            //intRecs
+            int intRecs = comm.ExecuteNonQuery();
+                //strResult += $"SUCCESS! Inserted {intRecs} record(s)" + Environment.NewLine;
 
                 //close connection
                 Conn.Close();
@@ -158,4 +159,4 @@ using System.Data.SqlClient;
 
     }
 
-    */
+ 

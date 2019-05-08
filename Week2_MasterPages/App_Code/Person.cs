@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-    class Person
+    public class Person
     {
 
         private string fName;
