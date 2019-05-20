@@ -1,0 +1,67 @@
+﻿@model firstMVC.ViewModels.Home.CarsListViewModel
+
+@{
+    ViewBag.Title = "CarsList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    select[multiple], select[size]
+    {
+        height: 100px;
+        width: 160px;
+    }
+
+    #left
+    {
+        float:left;
+        width: 200px;
+    }
+
+    #right
+    {
+        float:left;
+        width: 200px;
+    }
+
+    #center
+    {
+        width:75%;
+        margin:auto ;
+    }
+
+    footer
+    {
+        display: block;
+        clear: both;
+    }
+</style>
+
+<div id="center">
+
+    <div id="left">
+        <h2>CarsList</h2>
+
+        @Html.ListBox("carsList", Model.CarsList)
+    </div>
+
+    <div id="right">
+        <h2>Fastest Car</h2>
+        <dl>
+            <dt>ID</dt>
+            <dd>@Model.FastestCar.Car_ID</dd>
+
+            <dt>Model</dt>
+            <dd>@Model.FastestCar.Model</dd>
+
+            <dt>Max Speed</dt>
+            <dd>@Model.FastestCar.MaxSpeed</dd>
+
+
+        </dl>
+    </div>
+
+</div><!-- /center -->
+<br />
+<br />
+<br />
