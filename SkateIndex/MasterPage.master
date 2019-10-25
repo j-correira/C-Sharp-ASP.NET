@@ -1,0 +1,153 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+
+        main
+        {
+            margin:0 auto;
+            width: 980px;
+        }
+
+        #header
+        {
+            height:150px;
+            width:100%;
+            padding: 25px;
+        }
+
+        .w3-border
+        {
+            border: 1px solid #ccc!important;
+            border-radius: 8px;
+        }
+
+        #AllContent
+        {
+
+        }
+
+        #MainContent
+        {
+             width:80%; 
+             float:right;
+             padding: 0px 35px 0px 35px;
+        }
+
+        #SideContent
+        {
+             width:20%;
+             margin-right: 25px;
+             display:block;
+             border: 1px solid #6bb9f0;
+             border-radius:5px;
+        }
+
+        #footer
+        {
+            position: fixed;
+            height:50px;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #6bb9f0;
+            color: white;
+            text-align: center;
+        }
+
+        #nav
+        {
+            padding: 25px;
+            color:#6bb9f0;
+        }
+
+        .jumbotron
+        {
+            padding: 20px;
+            margin-bottom: 2rem;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+
+        .list-group-item.active {
+            z-index: 2;
+            color: #fff;
+            background-color: #1791e8;
+            /* border-color: #007bff; */
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <main>
+
+    <div id="nav">
+    <ul class="nav nav-tabs nav-justified">
+            <li class="nav-item">
+                <a class="nav-link" href="Default.aspx"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="AboutUs.aspx"><b>About</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ContactUs.aspx"><b>Contact</b></a>
+            </li>
+        </ul>
+    </div>
+     
+        <div class="jumbotron">
+            <h1>J's Master Page</h1> 
+            <p>"A master page is a special type of ASP.NET page that defines site-wide markup & regions where associated content will be"</p> 
+        </div>
+    
+        <div id="AllContent">
+
+            <div id="MainContent">
+                <asp:ContentPlaceHolder id="cphMainContent" runat="server">
+                Working on it............
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div id="SideContent">
+                <asp:ContentPlaceHolder id="cphSideContent" runat="server">
+                    Side Info/ Specials /News / Info
+                </asp:ContentPlaceHolder>
+                
+
+                              
+            </div>
+
+
+        </div><!-- close all content -->
+
+
+<!-- Footer -->
+<div id="footer">
+        <a href="/Controls/Default.aspx">Secret Login</a>
+    <p>Footery Foot Foot ©</p>
+</div>
+<!-- Footer -->
+
+
+
+
+
+    </main>
+    </form>
+</body>
+</html>
